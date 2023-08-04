@@ -27,7 +27,7 @@ app.use(function (req, res, next) {
   if (!token) return next(); //if no token, continue
 
   token = token.replace("Bearer ", "");
-  jwt.verify(token, process.env.JWT_SECRET, function (err, user) {
+  jwt.verify(token, 'ABCDEF$123', function (err, user) {
     if (err) {
       return res.status(401).json({
         error: true,
@@ -132,7 +132,7 @@ app.get("/verifyToken", function (req, res) {
     });
   }
 
-  jwt.verify(token, process.env.JWT_SECRET, function (err, user) {
+  jwt.verify(token, 'ABCDEF$123', function (err, user) {
     if (err)
       return res.status(401).json({
         error: true,
@@ -191,7 +191,7 @@ app.post("/addpost", (req, res) => {
 
 app.post("/user/posts", (req, res) => {
   let token = req.body.token;
-  jwt.verify(token, "1234abcd", function (error, user) {
+  jwt.verify(token, 'ABCDEF$123', function (error, user) {
     Posts.find({ authourid: user.userId }, (err, data) => {
       if (err) {
         res.status(404).json({

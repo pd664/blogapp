@@ -7,7 +7,7 @@ function generateToken(user) {
     name: user.name,
     username: user.username
   }
-  return jwt.sign(u, '1234abcd', {
+  return jwt.sign(u, 'ABCDEF$123', {
     expiresIn: 60 * 60 * 24 // expires in 24 hours
   });
 }
