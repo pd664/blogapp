@@ -1,7 +1,6 @@
 require("dotenv").config();
 var bcrypt = require("bcryptjs");
 const express = require("express");
-// const cors = require("cors");
 const bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
 const utils = require("./utils");
@@ -18,7 +17,6 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-app.use(cors());
 
 app.use(bodyParser.json());
 
@@ -245,7 +243,7 @@ app.get("/getall/posts", (req, res) => {
 });
 
 if(process.env.NODE_ENV === 'production') {
-  app.use(express.static('blogapp/build'))
+  app.use(express.static('blog/build'))
 }
 
 app.listen(port, () => {
