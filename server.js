@@ -229,4 +229,8 @@ app.post("/addpost", (req, res) => {
       });
   });
 
+  if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('blog/build'))
+}
+
 app.listen(PORT, () => console.log(`app is listening on http://localhost:4000`)) 
