@@ -15,7 +15,7 @@ function SignIn(props) {
     setLoading(true);
     console.log("user", username, password)
     axios
-      .post("http://localhost:4000/users/signin", {
+      .post("/users/signin", {
         username: username,
         password: password,
       })

@@ -15,7 +15,7 @@ function UserHome(props) {
   useEffect(() => {
     const token = getToken();
     axios
-      .post(`http://localhost:4000/user/posts`, {
+      .post(`/user/posts`, {
         token: token,
       })
       .then((response) => {

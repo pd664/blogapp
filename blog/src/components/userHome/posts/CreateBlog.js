@@ -22,7 +22,7 @@ function Createblog(props) {
     let con = content.split("'").join("''")
     let tit = title.split("'").join("''")
     console.log("user", getUser().userId, getUser().name)
-    axios.post(`http://localhost:4000/addpost`, {
+    axios.post(`/addpost`, {
       
       userid: user.userId,
       username: user.name,

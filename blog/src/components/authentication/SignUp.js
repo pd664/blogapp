@@ -13,7 +13,7 @@ function SignUp(props) {
     const navigate = useNavigate()
     const clickHandler = () => {
         setLoading(true);
-        axios.post('http://localhost:4000/users/signup', {
+        axios.post('/users/signup', {
             name : name,
             username: username,
             password: hashIt(password)

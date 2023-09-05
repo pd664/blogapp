@@ -13,7 +13,7 @@ function Postpreview(props) {
   const handleDelete = async () => {
     await alert("Are you sure you want to delete the post");
     axios
-      .post("http://localhost:4000/deletepost", {
+      .post("/deletepost", {
 
         id: props.postid,
         // token: props.token,

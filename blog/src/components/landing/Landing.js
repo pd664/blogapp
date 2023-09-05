@@ -79,7 +79,7 @@ function Landing() {
   useEffect(
      () => {
        axios
-        .get(`http://localhost:4000/getAllPost`)
+        .get(`/getAllPost`)
         .then((res) => {
         console.log("res.data")
           setPosts(res.data);

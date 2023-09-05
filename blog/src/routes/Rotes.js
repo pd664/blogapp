@@ -1,30 +1,14 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import axios from 'axios';
 import PrivateRoute from '../utils/PrivateRoute'
 import PublicRoute from '../utils/PublicRoute'
 import SignIn from '../components/authentication/SignIn';
 import SignUp from '../components/authentication/SignUp';
 import Landing from '../components/landing/Landing';
-import { allData } from '../reduxComps/action/index'
 import UserHome from '../components/userHome/UserHome';
 import CreateBlog from '../components/userHome/posts/CreateBlog'
 
 function Rotes() {
-  let dispatch = useDispatch()
-  
-  // useEffect(() => {
-  //   axios.get('http://localhost:4000/getAllPost')
-  //   .then((res) => {
-  //     console.log("ress", res.data)
-  //     dispatch(allData(res.data))
-  //   })
-  //   .catch((err) => {
-  //     console.log("err in fetching", err)
-  //   })
-  // }, [])
-
   return (
     <div>
         <Routes>
