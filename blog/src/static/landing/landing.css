@@ -1,0 +1,21 @@
+.credbtns {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.subtn, .sibtn {
+    border-radius: 5px;
+    border: white 1px;
+}
+
+.image { 
+    vertical-align: center;
+    height: 180px;
+    width: 250px;
+    margin-left: 0px;
+   }
+
+.imagecont {
+    margin-left: 0;
+}

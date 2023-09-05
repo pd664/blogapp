@@ -1,0 +1,17 @@
+#signin {
+    background-image: url(../../images/hubble.jpg);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.signinbody {
+    /* background-color: rgb(244, 244, 244); */
+    color: aqua;
+    height: 100%;
+    border-radius: 10px ;
+    border: 1px solid aqua;
+}
+
+.input {
+    line-height: 30px;
+}

@@ -1,0 +1,27 @@
+#signup {
+    background-image: url(../../images/hubble.jpg);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.signupbody {
+    color: aqua;
+    height: 100%;
+    border-radius: 10px ;
+    border: 1px solid aqua;
+}
+
+#acc {
+    color:red;
+}
+
+.btn_cred:hover {
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    /* border: none; */
+    /* line-height: 30px; */
+}
+
+.input {
+    line-height: 30px;
+}
