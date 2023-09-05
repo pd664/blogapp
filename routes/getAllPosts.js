@@ -10,6 +10,7 @@ app.get("/getAllPost", (req, res) => {
     })
     .catch((err) => {
        console.log("err", err)
+       console.log("err")
     })
   });
 
